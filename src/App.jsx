@@ -5,6 +5,11 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
 import Hero from './Components/Hero';
+import Works from './Components/Works';
+import Cursor from './Components/Cursor';
+import About from './Components/About';
+import bg2 from './Assets/bg2.jpg'
+import Acadmic from './Components/Acadmic';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,13 +38,20 @@ function App() {
         backgroundSize: '100%',
         backgroundPosition: 'top center',
       }} ref={bgRef}></div>
-
       <div className='bg-[#000000bb] h-screen w-full top_page'>
         <Nev />
         <Hero />
       </div>
-      <div className='h-[200vh]'>
+      <div className='bg-[#000000bb] w-full'>
+        <Works />
       </div>
+      <div className='bg-[#000000dd] w-full h-screen about_parent'>
+        <About />
+      </div>
+      <div className='bg-[#000000bb] w-full h-screen overflow-y-scroll'>
+        <Acadmic />
+      </div>
+      {/* <Cursor /> */}
     </>
   );
 }

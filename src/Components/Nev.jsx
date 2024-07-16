@@ -21,17 +21,17 @@ export default function Nev() {
         return `${hours}:${minutes}:${seconds}`;
     };
 
-    // useEffect(() => {
-    //     gsap.from('.nev_time', {
-    //         x: -10,
-    //         opacity: 0,
-    //         duration: 1
-    //     });
-    // }, []);
+    useEffect(() => {
+        gsap.from('.nev_time', {
+            x: -10,
+            opacity: 0,
+            duration: 1
+        });
+    }, []);
 
     return (
         <nav className="bg-black container mx-auto p-4 flex justify-between relative h-[10vh]">
-            <div className="nev_time text-gray-100">
+            <div className="text-gray-100 opacity-100">
                 Time : {formatTime(time)}
             </div>
             <div>

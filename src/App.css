@@ -2,3 +2,26 @@
   user-select: none;
   box-sizing: border-box;
 }
+/* body{
+  scroll-snap-type: y proximity;
+}
+body > div{
+  scroll-snap-align: center;
+  height: 100vh;
+  overflow-y: scroll;
+} */
+.about_parent{
+  position: relative;
+}
+.about_parent::before{
+  content: "";
+  background-image: url("./Assets/bg2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+}
