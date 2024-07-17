@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
 import profile from '../Assets/profile.png';
+import pdf from '../../public/resume.pdf'
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function About() {
@@ -60,8 +61,9 @@ export default function About() {
                 <span>T</span>
                 <br /><br />
                 <div className='md:text-2xl text-xl md:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
-                    f
+                    
                 </div>
+                <a href={pdf} download={'resume.pdf'}></a>
             </div>
             <div className='h-full md:pr-[10vw] flex items-center'>
                 <div className='md:w-[300px] w-[100px] border-4 h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>

@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 export default function Acadmic() {
     return (
-        <div className='container mx-auto p-4 h-full'>
+        <div className='container mx-auto p-4'>
             <div className='text-3xl md:text-5xl font-bold text-gray-300 p-5 md:p-10 mb-10 about_text w-full'>
                 <span>A</span>
                 <span>C</span>

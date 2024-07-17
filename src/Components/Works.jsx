@@ -7,6 +7,9 @@ import work3 from '../Assets/works/work3.png';
 import work4 from '../Assets/works/work4.png';
 import work5 from '../Assets/works/work5.png';
 import work6 from '../Assets/works/work6.png';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import TextPlugin from 'gsap/TextPlugin';
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function Works() {
     useGSAP(() => {
         gsap.from('.work_card', {

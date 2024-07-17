@@ -6,10 +6,15 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
 import Hero from './Components/Hero';
 import Works from './Components/Works';
-import Cursor from './Components/Cursor';
 import About from './Components/About';
-import bg2 from './Assets/bg2.jpg'
 import Acadmic from './Components/Acadmic';
+import Addons from './Components/Addons';
+import Techskills from './Components/Techskills';
+import Arcitecturalintrest from './Components/Arcitecturalintrest';
+import Imagesshow from './Components/Imagesshow';
+import Contact from './Components/Contact';
+import Cursor from './Components/Cursor';
+import Footer from './Components/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,10 +53,29 @@ function App() {
       <div className='bg-[#000000dd] w-full h-screen about_parent'>
         <About />
       </div>
-      <div className='bg-[#000000bb] w-full h-screen overflow-y-scroll'>
+      <div className='bg-[#000000bb] w-full'>
         <Acadmic />
       </div>
-      {/* <Cursor /> */}
+      <div className='bg-[#000000bb] w-full'>
+        <Addons />
+      </div>
+      <div className='bg-[#000000bb] w-full'>
+        <Techskills />
+      </div>
+      <div className='bg-[#000000bb] w-full'>
+        <Arcitecturalintrest />
+      </div>
+      <div className='bg-[#000000bb] w-full'>
+        <Imagesshow />
+      </div>
+      <div className='bg-[#000000bb] w-full'>
+        <Contact />
+      </div>
+      <div className='bg-[#000000bb] w-full'>
+        <Footer />
+      </div>
+
+      <Cursor />
     </>
   );
 }
