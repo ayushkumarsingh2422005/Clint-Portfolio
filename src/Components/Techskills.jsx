@@ -1,7 +1,25 @@
-import React from 'react'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import React from 'react';
 import Tilt from 'react-parallax-tilt';
 
 export default function Techskills() {
+    useGSAP(() => {
+        gsap.from('.techskills span', {
+            x: -10,
+            opacity: 0,
+            duration: 2,
+            stagger: 0.5,
+            scrollTrigger: {
+                trigger: ".techskills",
+                toggleActions: "restart none none none",
+                markers: true,
+                end: '10% 60%',
+                start: '10% bottom',
+                scrub: true,
+            }
+        });
+    });
     return (
         <div className='container mx-auto p-4 pt-0 relative'>
             <div className='text-3xl md:text-5xl font-bold text-gray-300 p-5 pt-0 w-full flex flex-col-reverse md:flex-row'>
@@ -28,7 +46,7 @@ export default function Techskills() {
                         </Tilt>
                     </div>
                 </div>
-                <div className='w-full sticky top-10 h-fit md:bg-transparent bg-black z-10 p-8 text-right'>
+                <div className='w-full sticky top-10 h-fit md:bg-transparent bg-black z-10 p-8 text-right techskills'>
                     <span>T</span>
                     <span>E</span>
                     <span>C</span>

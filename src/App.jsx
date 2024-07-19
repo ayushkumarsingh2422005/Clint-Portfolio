@@ -1,6 +1,6 @@
 import './App.css';
 import Nev from './Components/Nev';
-import bg from './Assets/bg.jpg';
+import bg from './Assets/bg.png';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from 'react';
@@ -15,6 +15,7 @@ import Imagesshow from './Components/Imagesshow';
 import Contact from './Components/Contact';
 import Cursor from './Components/Cursor';
 import Footer from './Components/Footer';
+import Freelance from './Components/Freelance';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +33,7 @@ function App() {
       },
       // scale: 0.5, // Scale down the background image
       duration: 3,
-      backgroundSize: "300%"
+      backgroundSize: "200%"
     });
   }, []);
 
@@ -43,32 +44,35 @@ function App() {
         backgroundSize: '100%',
         backgroundPosition: 'top center',
       }} ref={bgRef}></div>
-      <div className='bg-[#000000bb] h-screen w-full top_page'>
+      <div className='bg-[#000000bb] h-screen w-full top_page' id='home'>
         <Nev />
         <Hero />
       </div>
-      <div className='bg-[#000000bb] w-full'>
+      <div className='bg-[#000000bb] w-full' id='work'>
         <Works />
       </div>
-      <div className='bg-[#000000dd] w-full h-screen about_parent'>
+      <div className='bg-[#000000dd] w-full about_parent'>
         <About />
       </div>
-      <div className='bg-[#000000bb] w-full'>
+      <div className='bg-[#000000bb] w-full md:h-screen'>
         <Acadmic />
       </div>
+      {/* <div className='bg-[#000000bb] w-full'>
+        <Freelance />
+      </div> */}
       <div className='bg-[#000000bb] w-full'>
         <Addons />
       </div>
-      <div className='bg-[#000000bb] w-full'>
+      {/* <div className='bg-[#000000bb] w-full'>
         <Techskills />
-      </div>
+      </div> */}
       <div className='bg-[#000000bb] w-full'>
         <Arcitecturalintrest />
       </div>
-      <div className='bg-[#000000bb] w-full'>
+      {/* <div className='bg-[#000000bb] w-full md:block hidden'>
         <Imagesshow />
-      </div>
-      <div className='bg-[#000000bb] w-full'>
+      </div> */}
+      <div className='bg-[#000000bb] w-full' id='contact'>
         <Contact />
       </div>
       <div className='bg-[#000000bb] w-full'>

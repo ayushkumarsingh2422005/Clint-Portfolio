@@ -22,16 +22,16 @@ export default function Nev() {
     };
 
     useEffect(() => {
-        gsap.from('.nev_time', {
-            x: -10,
-            opacity: 0,
-            duration: 1
-        });
+        // gsap.from('.nev_time', {
+        //     x: -10,
+        //     opacity: 0,
+        //     duration: 1
+        // });
     }, []);
 
     return (
         <nav className="bg-black container mx-auto p-4 flex justify-between relative h-[10vh]">
-            <div className={`text-gray-100 ${!nevstate ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`text-gray-400 flex items-center font-bold ${!nevstate ? 'opacity-100' : 'opacity-0'}`}>
                 Time : {formatTime(time)}
             </div>
             <div>
@@ -41,10 +41,11 @@ export default function Nev() {
                     <div className={`bg-white w-5 h-1 self-end rounded-full -translate-y-[2.2px] duration-100 ${nevstate && 'rotate-[45deg] origin-right -translate-x-[4.2px]'}`}></div>
                 </div>
             </div>
-            <div className={`absolute flex ${nevstate ? "top-full" : "-top-[60vh]"} left-0 flex-col bg-black w-full justify-evenly items-center h-[60vh] duration-100 md:text-6xl text-4xl text-gray-100 p-10 text-center`}>
-                <Link to="/" className="nav-link hover:text-black w-full py-3 font-bold">Home</Link>
-                <Link to="/work" className="nav-link hover:text-black w-full py-3 font-bold">Work</Link>
-                <Link to="/contact-us" className="nav-link hover:text-black w-full py-3 font-bold">Contact Us</Link>
+            <div className={`absolute flex ${nevstate ? "top-full" : "-top-[60vh]"} left-0 flex-col bg-black w-full justify-evenly items-center h-[60vh] duration-100 md:text-5xl text-3xl text-gray-100 p-10 text-center`}>
+                <a href="#home" className="nav-link hover:text-black w-full py-3 font-bold">Home</a>
+                <a href="#work" className="nav-link hover:text-black w-full py-3 font-bold">Featured works</a>
+                <a href="#contact" className="nav-link hover:text-black w-full py-3 font-bold">Contact Us</a>
+
             </div>
         </nav>
     );

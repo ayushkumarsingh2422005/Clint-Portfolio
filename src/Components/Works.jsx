@@ -9,6 +9,7 @@ import work5 from '../Assets/works/work5.png';
 import work6 from '../Assets/works/work6.png';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function Works() {
     useGSAP(() => {
@@ -61,85 +62,66 @@ export default function Works() {
                 WORK */}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-10 px-5 md:px-10 ">
-                <div className="w-full h-[70vh] bg-gray-200 font-bold work_card" style={{
+                <Link to={'work1'} className="w-full h-[70vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work1 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        ALLY HIGH
-                        HUMAN CENTRIC DESIGN
-                        - HIGH RISE RESIDENCE
-                        (7TH SEMESTER)
+                        HIGH RISE RESIDENCE - ALLY HIGH
                     </div>
-
-                </div>
-                <div className="w-full h-[70vh] bg-gray-300 font-bold work_card" style={{
+                </Link>
+                <Link to={'work2'} className="w-full h-[70vh] bg-gray-300 font-bold work_card" style={{
                     backgroundImage: 'url(' + work2 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        CLIFF VISTA ECO HAVEN
-                        ECO-WELLNESS RESORT
-                        (THESIS)
+                        ECO-WELLNESS RESORT - CLIFF VISTA ECO HAVEN
                     </div>
-
-
-                </div>
-                <div className="w-full h-[70vh] bg-gray-400 font-bold work_card" style={{
+                </Link>
+                <Link to={'work3'} className="w-full h-[70vh] bg-gray-400 font-bold work_card" style={{
                     backgroundImage: 'url(' + work3 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        CORNER HOUSE
-                        RESIDENCE DESIGN
-                        (2ND SEMESTER)
+                        RESIDENCE DESIGN - CORNER HOUSE
                     </div>
-
-
-                </div>
-                <div className="w-full h-[70vh] bg-gray-500 font-bold work_card" style={{
+                </Link>
+                <Link to={'work4'} className="w-full h-[70vh] bg-gray-500 font-bold work_card" style={{
                     backgroundImage: 'url(' + work4 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        OTHER SEMESTER WORKS/
-                        INTERIORS/ FREELANCE
+                        OTHER PROJECTS
                     </div>
-
-
-                </div>
-                <div className="w-full h-[70vh] bg-gray-600 font-bold work_card" style={{
+                </Link>
+                <Link to={'work5'} className="w-full h-[70vh] bg-gray-600 font-bold work_card" style={{
                     backgroundImage: 'url(' + work5 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        WORKING DRAWINGS
+                        INTERIORS
                     </div>
-
-                </div>
-                <div className="w-full h-[70vh] bg-gray-700 font-bold work_card" style={{
+                </Link>
+                <Link to={'work6'} className="w-full h-[70vh] bg-gray-700 font-bold work_card" style={{
                     backgroundImage: 'url(' + work6 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
                     <div className='h-full w-full backdrop-grayscale hover:backdrop-grayscale-0 duration-500 flext text-center items-center justify-center p-1 cursor-pointer' >
-                        MISCELLANEOUS
-                        (PHOTOGRAPHY/ MODEL
-                        MAKING/ SKETCHES)
+                        FREELANCE PROJECTS
                     </div>
-
-                </div>
+                </Link>
             </div>
 
         </div>

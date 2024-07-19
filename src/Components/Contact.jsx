@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from './Canvas/index';
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import ImagesShow from "./Imagesshow";
 
 const Contact = () => {
   const formRef = useRef();
@@ -13,6 +13,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -39,8 +40,8 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Ayush kr singh",
           from_email: form.email,
-          to_email: "ayush2422005@gmail.com",
-          message: form.message,
+          to_email: "sonakshi.amlr@gmail.com",
+          message: form.message+" | Contact number : "+form.phone,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -73,7 +74,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact Me</h3>
 
         <form
           ref={formRef}
@@ -88,7 +89,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-700 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -99,7 +100,18 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-700 rounded-lg outline-none border-none font-medium'
+            />
+          </label>
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>Your Phone No</span>
+            <input
+              type='number'
+              name='phone'
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="What's your phone number?"
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-700 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -110,7 +122,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-700 rounded-lg outline-none border-none font-medium'
             />
           </label>
 
@@ -125,9 +137,10 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] md:mt-28'
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
+        <ImagesShow />
       </motion.div>
     </div>
   );

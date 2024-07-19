@@ -3,25 +3,27 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import TextPlugin from 'gsap/TextPlugin';
-import profile from '../Assets/profile.png';
-import pdf from '../../public/resume.pdf'
+import profile from '../Assets/profile.jpg';
+import pdf from '/resume.pdf'
+import portfolio from '/portfolio.pdf'
+import { FaDownload } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 export default function About() {
     useGSAP(() => {
-        gsap.to('.about_image_laptop', {
-            // bottom:"0",
-            top: '90%',
-            ease:'linear',
-            scrollTrigger: {
-                trigger: ".about_image_container",
-                end: '190% top',
-                start: '50% bottom',
-                // markers: true,
-                scrub: true,
-                // pin: true
-            }
-        });
+        // gsap.to('.about_image_laptop', {
+        //     // bottom:"0",
+        //     top: '90%',
+        //     ease: 'linear',
+        //     scrollTrigger: {
+        //         trigger: ".about_image_container",
+        //         end: '190% top',
+        //         start: '50% bottom',
+        //         // markers: true,
+        //         scrub: true,
+        //         // pin: true
+        //     }
+        // });
 
         gsap.from('.about_text span', {
             x: -10,
@@ -40,7 +42,14 @@ export default function About() {
 
         gsap.to('.about_text_inner', {
             duration: 2,
-            text: `I am currently pursuing 10th semester B.arch at Manipal school of architecture and planning, dedicated with keen interest in architecture, interiors, arts and design. I am looking forward to gain work experience and improve my design and technical knowledge. My main goal is to seek a position where my skills can be utilized and improved.`,
+            text: `Welcome to my portfolio! I am a
+dedicated architect based out of Hyderabad, India; passionate about designing, planning,
+and executing various projects with creativity and precision. With a strong commitment to
+continuous learning and growth, I actively seek opportunities to enhance my skills and
+expand my knowledge in architecture and design. My goal is to deliver innovative solutions
+that not only meet but exceed client expectations, ensuring each project is a testament to
+both aesthetic appeal and functional excellence. Explore my portfolio to discover how I can
+contribute to your next architectural endeavor.`,
             ease: 'power4.out',
             scrollTrigger: {
                 trigger: '.about_text_inner',
@@ -61,11 +70,25 @@ export default function About() {
                 <span>T</span>
                 <br /><br />
                 <div className='md:text-2xl text-xl md:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
-                    
+                </div> <br />
+                <div className='flex gsp-5 md:flex-row flex-col'>
+                    <a href={pdf} download={'resume.pdf'} className='text-xl text-[#ffffff] flex w-fit items-center rounded-md justify-center p-0'>
+                        <div className="button2"><span className='h-full w-full'>
+                            <div className='flex'>
+                                <span className='p-2'>Resume</span> <span className='border-l-2 p-2 flex items-center'><FaDownload /></span>
+                            </div>
+                        </span></div>
+                    </a> <br />
+                    <a href={portfolio} download={'portfolio.pdf'} className='text-xl text-[#ffffff] flex w-fit items-center rounded-md justify-center p-0'>
+                        <div className="button2"><span className='h-full w-full'>
+                            <div className='flex'>
+                                <span className='p-2'>Portfolio</span> <span className='border-l-2 p-2 flex items-center'><FaDownload /></span>
+                            </div>
+                        </span></div>
+                    </a>
                 </div>
-                <a href={pdf} download={'resume.pdf'}></a>
             </div>
-            <div className='h-full md:pr-[10vw] flex items-center'>
+            <div className='h-[100vh] md:pr-[10vw] flex items-center'>
                 <div className='md:w-[300px] w-[100px] border-4 h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>
                     <div className='w-full aspect-square rounded-full bg-slate-200 about_image_laptop absolute top-0 left-0' style={{
                         backgroundImage: 'url("' + profile + '")',

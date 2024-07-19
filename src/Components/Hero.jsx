@@ -18,7 +18,7 @@ export default function Hero() {
         <div className='container mx-auto flex text-white h-[90vh] flex-col'>
             <div className='w-full flex justify-center'>
                 <div className='w-[10%] h-[60vh] mt-[10vh] flex flex-col'>
-                    <div className='h-6 w-6 rounded-full bg-[#DC00FF] self-end'></div>
+                    <div className='h-6 w-6 rounded-full bg-[rgb(220,0,255)] self-end'></div>
                     <div className='h-full w-2 rounded-full bg-gradient-to-b from-[#DC00FF] to-transparent mr-[0.50rem] self-end'></div>
                 </div>
                 <div className='w-[80%] h-[60vh] mt-[10vh] p-10 font-bold text-3xl md:text-5xl'>
