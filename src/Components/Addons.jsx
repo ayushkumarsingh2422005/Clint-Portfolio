@@ -60,76 +60,76 @@ export default function Addons() {
                 <div className='w-full md:p-10 h-full md:pt-40 pt-20 card_container_parent'>
                     <div className='flex gap-5 card_container'>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={revit} className='h-[30px]'/> Revit</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={revit} className='md:h-[30px] h-[20px]'/> Revit</h1>
                             </div>
                         </div>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={autocad} className='h-[30px]'/> Autocad</h1> 
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={autocad} className='md:h-[30px] h-[20px]'/> Autocad</h1> 
                             </div>
                         </div>
                     </div>
 
                     <div className='flex gap-5 card_container'>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={sketchup} className='h-[30px]'/>SketchUp</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={sketchup} className='md:h-[30px] h-[20px]'/>SketchUp</h1>
                             </div>
                         </div>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'> <img src={rhino} className='h-[30px]'/>Rhino</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'> <img src={rhino} className='md:h-[30px] h-[20px]'/>Rhino</h1>
                             </div>
                         </div>
                     </div>
                     <div className='flex gap-5 card_container'>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={enscape} className='h-[30px]'/>Enscape</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={enscape} className='md:h-[30px] h-[20px]'/>Enscape</h1>
                             </div>
                         </div>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={d5} className='h-[30px]'/>D5</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='flex gap-5 card_container'>
-                        <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={vray} className='h-[30px]'/>Vray</h1>
-                            </div>
-                        </div>
-                        <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={twinmotion} className='h-[30px]'/>TwinMotion</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex gap-5 card_container'>
-                        <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={photoshop} className='h-[30px]'/>Photoshop</h1>
-                            </div>
-                        </div>
-                        <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={indesign} className='h-[30px]'/>Indesign</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={d5} className='md:h-[30px] h-[20px]'/>D5</h1>
                             </div>
                         </div>
                     </div>
 
                     <div className='flex gap-5 card_container'>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={designbuillder} className='h-[30px]'/>DesignBuilder</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={vray} className='md:h-[30px] h-[20px]'/>Vray</h1>
                             </div>
                         </div>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
-                                <h1 className='flex items-center justify-center gap-2'><img src={mssuite} className='h-[30px]'/>MsSuite</h1>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={twinmotion} className='md:h-[30px] h-[20px]'/>TwinMotion</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex gap-5 card_container'>
+                        <div className='w-[40%]'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={photoshop} className='md:h-[30px] h-[20px]'/>Photoshop</h1>
+                            </div>
+                        </div>
+                        <div className='w-[60%]'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={indesign} className='md:h-[30px] h-[20px]'/>Indesign</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex gap-5 card_container'>
+                        <div className='w-[60%]'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={designbuillder} className='md:h-[30px] h-[20px]'/>DesignBuilder</h1>
+                            </div>
+                        </div>
+                        <div className='w-[40%]'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
+                                <h1 className='flex items-center justify-center gap-2'><img src={mssuite} className='md:h-[30px] h-[20px]'/>MsSuite</h1>
                             </div>
                         </div>
                     </div>

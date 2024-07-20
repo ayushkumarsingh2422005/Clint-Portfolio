@@ -62,7 +62,7 @@ export default function Works() {
                 WORK */}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-10 px-5 md:px-10 ">
-                <Link to={'work1'} className="w-full h-[70vh] bg-gray-200 font-bold work_card" style={{
+                <Link to={'work1'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work1 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -72,7 +72,7 @@ export default function Works() {
                         HIGH RISE RESIDENCE - ALLY HIGH
                     </div>
                 </Link>
-                <Link to={'work2'} className="w-full h-[70vh] bg-gray-300 font-bold work_card" style={{
+                <Link to={'work2'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work2 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -82,7 +82,7 @@ export default function Works() {
                         ECO-WELLNESS RESORT - CLIFF VISTA ECO HAVEN
                     </div>
                 </Link>
-                <Link to={'work3'} className="w-full h-[70vh] bg-gray-400 font-bold work_card" style={{
+                <Link to={'work3'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work3 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -92,7 +92,7 @@ export default function Works() {
                         RESIDENCE DESIGN - CORNER HOUSE
                     </div>
                 </Link>
-                <Link to={'work4'} className="w-full h-[70vh] bg-gray-500 font-bold work_card" style={{
+                <Link to={'work4'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work4 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -102,7 +102,7 @@ export default function Works() {
                         OTHER PROJECTS
                     </div>
                 </Link>
-                <Link to={'work5'} className="w-full h-[70vh] bg-gray-600 font-bold work_card" style={{
+                <Link to={'work5'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work5 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -112,7 +112,7 @@ export default function Works() {
                         INTERIORS
                     </div>
                 </Link>
-                <Link to={'work6'} className="w-full h-[70vh] bg-gray-700 font-bold work_card" style={{
+                <Link to={'work6'} className="w-full md:h-[70vh] h-[50vh] bg-gray-200 font-bold work_card" style={{
                     backgroundImage: 'url(' + work6 + ')',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',

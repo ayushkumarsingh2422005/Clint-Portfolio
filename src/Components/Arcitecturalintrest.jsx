@@ -42,12 +42,12 @@ export default function Arcitecturalintrest() {
                 <div className='w-full md:p-10 h-full md:pt-40 pt-20 card_container_parent_a'>
                     <div className='flex gap-5 card_container_a'>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
                                 <h1>Architectural</h1>
                             </div>
                         </div>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
                                 <h1>Interiors</h1>
                             </div>
                         </div>
@@ -55,19 +55,19 @@ export default function Arcitecturalintrest() {
 
                     <div className='flex gap-5 card_container_a'>
                         <div className='w-[60%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
                                 <h1>Retrofitting</h1>
                             </div>
                         </div>
                         <div className='w-[40%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
                                 <h1>Landscaping</h1>
                             </div>
                         </div>
                     </div>
                     <div className='flex gap-5 card_container_a'>
                         <div className='w-[100%]'>
-                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 mb:text-2xl text-xl text-center overflow-x-scroll relative card_sec'>
+                            <div className='w-full md:p-10 p-5 bg-gray-900 rounded-md md:mb-10 mb-5 md:text-2xl text-sm text-center overflow-x-scroll relative card_sec'>
                                 <h1>3d Visualisation</h1>
                             </div>
                         </div>
