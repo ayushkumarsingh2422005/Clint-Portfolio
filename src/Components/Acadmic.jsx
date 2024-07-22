@@ -73,7 +73,7 @@ export default function Academic() {
         <span>E</span>
       </div>
       <div
-        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} lg:overflow-x-auto scrollable-element scrollbar-dark`}
+        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} 2xl:overflow-x-auto lg:overflow-x-auto scrollable-element scrollbar-dark 2xl:mx-auto`}
         // onDoubleClick={handleDoubleClick}
         ref={timelineRef}
       >
@@ -83,7 +83,7 @@ export default function Academic() {
           ))}
         </div>
       </div>
-      <div className={`absolute w-20 right-0 top-0 h-full z-10 flex items-center justify-end bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"} font-bold p-4 text-5xl lg:hidden`} onClick={() => setTimeline(!timeline)}>⟩</div>
+      <div className={`absolute w-20 right-0 top-0 h-full z-10 flex items-center justify-end bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"} font-bold p-4 text-5xl lg:hidden 2xl:hidden`} onClick={() => setTimeline(!timeline)}>⟩</div>
     </div>
   );
 }
