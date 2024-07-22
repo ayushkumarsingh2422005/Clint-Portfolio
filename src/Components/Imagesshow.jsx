@@ -40,7 +40,7 @@ export default function ImagesShow() {
   return (
     <>
       <div
-        className={`w-full lg:h-screen md:h-full h-full transition-opacity duration-1000 lg:bg-cover bg-contain ${fade ? 'opacity-100' : 'opacity-0'}`}
+        className={`lg:w-[150%] w-full lg:h-full md:h-full h-full transition-opacity duration-1000 lg:bg-cover bg-contain ${fade ? 'opacity-100' : 'opacity-0'}`}
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           // backgroundSize: 'contain',
@@ -49,7 +49,7 @@ export default function ImagesShow() {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div className='bg-gradient-to-b lg:from-black to-transparent text-gray-500 p-4 sticky top-0 text-xl font-bold h-[50vh]'>
+        <div className='text-gray-500 p-4 sticky top-0 text-xl font-bold h-[50vh]'>
           {/* {texts[currentIndex]} */}
         </div>
       </div>
