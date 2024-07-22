@@ -49,7 +49,7 @@ export default function ImagesShow() {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div className='bg-gradient-to-b from-black to-transparent text-gray-500 p-4 sticky top-0 text-xl font-bold h-[50vh]'>
+        <div className='bg-gradient-to-b lg:from-black to-transparent text-gray-500 p-4 sticky top-0 text-xl font-bold h-[50vh]'>
           {/* {texts[currentIndex]} */}
         </div>
       </div>

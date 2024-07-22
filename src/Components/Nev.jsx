@@ -42,9 +42,9 @@ export default function Nev() {
                 </div>
             </div>
             <div className={`absolute flex ${nevstate ? "top-full" : "-top-[60vh]"} left-0 flex-col bg-black w-full justify-evenly items-center h-[60vh] duration-100 md:text-5xl text-3xl text-gray-100 p-10 text-center`}>
-                <a href="#home" className="nav-link hover:text-black w-full py-3 font-bold">Home</a>
-                <a href="#work" className="nav-link hover:text-black w-full py-3 font-bold">Featured works</a>
-                <a href="#contact" className="nav-link hover:text-black w-full py-3 font-bold">Contact Us</a>
+                <a href="#home" className="nav-link hover:text-black w-full py-3 font-bold" onClick={()=>setNevState(!nevstate)}>Home</a>
+                <a href="#work" className="nav-link hover:text-black w-full py-3 font-bold" onClick={()=>setNevState(!nevstate)}>Featured works</a>
+                <a href="#contact" className="nav-link hover:text-black w-full py-3 font-bold" onClick={()=>setNevState(!nevstate)}>Contact Us</a>
 
             </div>
         </nav>
