@@ -42,14 +42,7 @@ export default function About() {
 
         gsap.to('.about_text_inner', {
             duration: 2,
-            text: `Welcome to my portfolio! I am a
-dedicated architect based out of Hyderabad, India; passionate about designing, planning,
-and executing various projects with creativity and precision. With a strong commitment to
-continuous learning and growth, I actively seek opportunities to enhance my skills and
-expand my knowledge in architecture and design. My goal is to deliver innovative solutions
-that not only meet but exceed client expectations, ensuring each project is a testament to
-both aesthetic appeal and functional excellence. Explore my portfolio to discover how I can
-contribute to your next architectural endeavor.`,
+            text: `Welcome to my portfolio! I am a dedicated architect based out of Hyderabad, India graduate from Manipal School of Architecture and Planning ; passionate about designing, planning, and executing various projects with creativity and precision. With a strong commitment to continuous learning and growth, I actively seek opportunities to enhance my skills and expand my knowledge in architecture and design. My goal is to deliver innovative solutions that not only meet but exceed client expectations, ensuring each project is a testament to both aesthetic appeal and functional excellence. Explore my portfolio to discover how I can contribute to your next architectural endeavor.`,
             ease: 'power4.out',
             scrollTrigger: {
                 trigger: '.about_text_inner',
@@ -92,10 +85,10 @@ contribute to your next architectural endeavor.`,
                 <div className='lg:w-[300px] md:w-full w-full h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>
                     <div className='lg:w-full md:w-auto w-auto h-full md:h-full
                     lg:h-[70%] aspect-square rounded-full bg-slate-200 about_image_laptop absolute top-0 left-0' style={{
-                        backgroundImage: 'url("' + profile + '")',
-                        backgroundSize: 'cover',
-                        backgroundOrigin: 'right center',
-                    }}></div>
+                            backgroundImage: 'url("' + profile + '")',
+                            backgroundSize: 'cover',
+                            backgroundOrigin: 'right center',
+                        }}></div>
                 </div>
             </div>
         </div>
