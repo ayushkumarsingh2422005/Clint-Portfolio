@@ -40,7 +40,7 @@ export default function ImagesShow() {
   return (
     <>
       <div
-        className={`w-full lg:h-screen md:h-full h-full transition-opacity duration-1000 md:bg-cover bg-contain ${fade ? 'opacity-100' : 'opacity-0'}`}
+        className={`w-full lg:h-screen md:h-full h-full transition-opacity duration-1000 lg:bg-cover bg-contain ${fade ? 'opacity-100' : 'opacity-0'}`}
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
           // backgroundSize: 'contain',
