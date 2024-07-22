@@ -72,15 +72,15 @@ export default function Academic() {
         <span>C</span>
         <span>E</span>
       </div>
-      <div 
-        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-auto"} ${enableHorizontalScroll ? "overflow-x-auto" : ""}`}
-        onDoubleClick={handleDoubleClick}
+      <div
+        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} scrollable-element scrollbar-dark`}
+        // onDoubleClick={handleDoubleClick}
         ref={timelineRef}
       >
-        <div className={`absolute w-20 right-0 h-full z-10 flex items-center justify-center bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block": "hidden"} scroll`} onClick={()=>setTimeline(!timeline)}>M<br />O<br />R<br />E</div>
+        <div className={`absolute w-20 right-0 h-full z-10 flex items-center justify-center bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"}`} onClick={() => setTimeline(!timeline)}>M<br />O<br />R<br />E</div>
         <div className="timeline">
           {items.map((item, index) => (
-            <TimelineComponent desc={item.description} date={item.date} color={item.color} idx={index} key={index}/>
+            <TimelineComponent desc={item.description} date={item.date} color={item.color} idx={index} key={index} />
           ))}
         </div>
       </div>
