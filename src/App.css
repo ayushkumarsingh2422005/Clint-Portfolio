@@ -9,8 +9,9 @@
   font-weight: 500 !important;
 }
 body{
-  overflow-x: hidden;
-  background-color: rgb(17, 24, 39)
+  overflow-x: hidden !important;
+  width: 100vw;
+  background-color: rgb(17, 24, 39);
 }
 *::-webkit-scrollbar{
   display: none;
