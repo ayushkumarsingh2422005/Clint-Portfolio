@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-full fixed top-0 left-0 -z-50' style={{
+      <div className='h-screen w-full fixed top-0 left-0 -z-50 md:scale-100 scale-[3.2] origin-top' style={{
         backgroundImage: `url('${bg}')`,
         backgroundSize: '100%',
         backgroundPosition: 'top center',

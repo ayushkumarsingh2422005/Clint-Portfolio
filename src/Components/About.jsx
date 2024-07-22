@@ -69,7 +69,7 @@ contribute to your next architectural endeavor.`,
                 <span>U</span>
                 <span>T</span>
                 <br /><br />
-                <div className='md:text-2xl text-xl md:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
+                <div className='md:text-2xl text-base md:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
                 </div> <br />
                 <div className='flex gsp-5 flex-row'>
                     <a href={pdf} download={'resume.pdf'} className='text-xl text-[#ffffff] flex w-fit items-center rounded-md justify-center p-0'>
@@ -88,7 +88,7 @@ contribute to your next architectural endeavor.`,
                     </a>
                 </div>
             </div>
-            <div className='md:h-[100vh] h-[15vh] md:pr-[10vw] flex items-center'>
+            <div className='md:h-[100vh] h-[25vh] md:pr-[10vw] flex items-center'>
                 <div className='md:w-[300px] w-full border-4 h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>
                     <div className='md:w-full w-auto h-full
                     md:h-auto aspect-square rounded-full bg-slate-200 about_image_laptop absolute top-0 left-0' style={{
