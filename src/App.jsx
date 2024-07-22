@@ -46,8 +46,9 @@ function App() {
         backgroundSize: '100%',
         backgroundPosition: 'top center',
       }} ref={bgRef}></div>
+      <Nev />
       <div className='bg-[#000000bb] h-screen w-full top_page' id='home'>
-        <Nev />
+        
         <Hero />
       </div>
       <div className='bg-[#000000bb] w-full' id='work'>

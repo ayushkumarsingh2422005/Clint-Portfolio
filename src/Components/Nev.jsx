@@ -30,7 +30,7 @@ export default function Nev() {
     }, []);
 
     return (
-        <nav className="bg-black container mx-auto p-4 flex justify-between relative h-[10vh]">
+        <nav className="bg-black container mx-auto p-4 flex justify-between h-[10vh] sticky top-0 z-50">
             <div className={`text-gray-400 flex items-center font-bold ${!nevstate ? 'opacity-100' : 'opacity-0'}`}>
                 Time : {formatTime(time)}
             </div>
