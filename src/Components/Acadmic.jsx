@@ -43,8 +43,8 @@ export default function Academic() {
     { date: "2020", description: "➢ 4bhk duplex residence<br>➢ Kindergarten school ", background: 'rgb(55, 55, 55)' },
     { date: "2021", description: "➢ Island resort design<br>➢ Architecture campus design", background: 'rgb(55, 55, 55)' },
     { date: "2022", description: "➢ Artisan’s village<br>➢ High rise apartments", background: 'rgb(55, 55, 55)' },
-    { date: "2023", description: "➢ Practical training at B design studios, Hyderabad<br>➢ Mixed use development, freelance- 2bhk, apartment elevation design", background: 'rgb(55, 55, 55)' },
-    { date: "2024", description: "➢ Eco wellness beach resort<br>➢ Jr. architect at sudhir and associates ( May 2024 - present)", background: 'rgb(55, 55, 55)' },
+    { date: "2023", description: "➢ Practical training at B design<br> studios, Hyderabad<br>➢ Mixed use development, freelance-<br> 2bhk, apartment elevation design", background: 'rgb(55, 55, 55)' },
+    { date: "2024", description: "➢ Eco wellness beach resort<br>➢ Jr. architect at sudhir and <br> associates ( May 2024 - present)", background: 'rgb(55, 55, 55)' },
   ];
 
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function Academic() {
         <span>E</span>
       </div>
       <div
-        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} scrollable-element scrollbar-dark`}
+        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} lg:overflow-x-auto scrollable-element scrollbar-dark`}
         // onDoubleClick={handleDoubleClick}
         ref={timelineRef}
       >
@@ -83,7 +83,7 @@ export default function Academic() {
           ))}
         </div>
       </div>
-      <div className={`absolute w-20 right-0 top-0 h-full z-10 flex items-center justify-end bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"} font-bold p-4 text-5xl`} onClick={() => setTimeline(!timeline)}>⟩</div>
+      <div className={`absolute w-20 right-0 top-0 h-full z-10 flex items-center justify-end bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"} font-bold p-4 text-5xl lg:hidden`} onClick={() => setTimeline(!timeline)}>⟩</div>
     </div>
   );
 }

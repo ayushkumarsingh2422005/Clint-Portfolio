@@ -12,7 +12,7 @@
     align-items: center;
     position: relative;
     /* padding-left: 0vw; */
-    margin: 0 30vw;
+    margin: 0 auto;
 }
 
 .timeline::before {
