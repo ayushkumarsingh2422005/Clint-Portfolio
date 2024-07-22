@@ -16,6 +16,8 @@ import Contact from './Components/Contact';
 import Cursor from './Components/Cursor';
 import Footer from './Components/Footer';
 import Freelance from './Components/Freelance';
+import { BiLandscape, BiRotateLeft } from 'react-icons/bi';
+import { BsPhoneLandscape } from 'react-icons/bs';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +41,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-full fixed top-0 left-0 -z-50 md:scale-100 scale-[3.2] origin-top' style={{
+      <div className='h-screen w-full fixed top-0 left-0 -z-50 lg:scale-100 md:scale-[2] scale-[3.2] origin-top' style={{
         backgroundImage: `url('${bg}')`,
         backgroundSize: '100%',
         backgroundPosition: 'top center',
@@ -80,6 +82,9 @@ function App() {
       </div>
 
       <Cursor />
+      <div className='top-cover'>
+          Rotate Phone &nbsp; <BiRotateLeft/>
+      </div>
     </>
   );
 }

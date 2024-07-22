@@ -40,12 +40,13 @@ export default function ImagesShow() {
   return (
     <>
       <div
-        className={`w-full md:h-screen h-full transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}
+        className={`w-full lg:h-screen md:h-full h-full transition-opacity duration-1000 md:bg-cover bg-contain ${fade ? 'opacity-100' : 'opacity-0'}`}
         style={{
           backgroundImage: `url(${images[currentIndex]})`,
-          backgroundSize: 'cover',
+          // backgroundSize: 'contain',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
+          backgroundRepeat: "no-repeat"
         }}
       >
         <div className='bg-gradient-to-b from-black to-transparent text-gray-500 p-4 sticky top-0 text-xl font-bold h-[50vh]'>

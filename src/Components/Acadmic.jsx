@@ -59,7 +59,7 @@ export default function Academic() {
   }, [enableHorizontalScroll]);
 
   return (
-    <div className='container mx-auto p-4'>
+    <div className='container mx-auto p-4 relative'>
       <div className='text-3xl md:text-5xl font-bold text-gray-300 p-5 md:p-10 mb-10 acadmics_text w-full'>
         <span>E</span>
         <span>X</span>
@@ -77,13 +77,13 @@ export default function Academic() {
         // onDoubleClick={handleDoubleClick}
         ref={timelineRef}
       >
-        <div className={`absolute w-20 right-0 h-full z-10 flex items-center justify-center bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"}`} onClick={() => setTimeline(!timeline)}>M<br />O<br />R<br />E</div>
         <div className="timeline">
           {items.map((item, index) => (
             <TimelineComponent desc={item.description} date={item.date} color={item.color} idx={index} key={index} />
           ))}
         </div>
       </div>
+      <div className={`absolute w-20 right-0 top-0 h-full z-10 flex items-center justify-end bg-gradient-to-l from-black via-black/100 to-transparent text-white cursor-pointer ${!timeline ? "block" : "hidden"} font-bold p-4 text-5xl`} onClick={() => setTimeline(!timeline)}>⟩</div>
     </div>
   );
 }

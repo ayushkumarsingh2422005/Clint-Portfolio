@@ -61,7 +61,7 @@ contribute to your next architectural endeavor.`,
         });
     }, [])
     return (
-        <div className='container mx-auto p-4 relative about_container flex h-full md:gap-20 md:flex-row flex-col-reverse'>
+        <div className='container mx-auto p-4 relative about_container flex h-full md:gap-20 lg:flex-row md:flex-col-reverse flex-col-reverse'>
             <div className='text-3xl md:text-5xl font-bold text-gray-300 p-5 md:p-10 mb-10 about_text w-full'>
                 <span>A</span>
                 <span>B</span>
@@ -69,7 +69,7 @@ contribute to your next architectural endeavor.`,
                 <span>U</span>
                 <span>T</span>
                 <br /><br />
-                <div className='md:text-2xl text-base md:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
+                <div className='md:text-2xl text-base lg:w-[60%] w-full text-justify font-medium text-gray-400 about_text_inner'>
                 </div> <br />
                 <div className='flex gsp-5 flex-row'>
                     <a href={pdf} download={'resume.pdf'} className='text-xl text-[#ffffff] flex w-fit items-center rounded-md justify-center p-0'>
@@ -88,10 +88,10 @@ contribute to your next architectural endeavor.`,
                     </a>
                 </div>
             </div>
-            <div className='md:h-[100vh] h-[25vh] md:pr-[10vw] flex items-center'>
-                <div className='md:w-[300px] w-full border-4 h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>
-                    <div className='md:w-full w-auto h-full
-                    md:h-auto aspect-square rounded-full bg-slate-200 about_image_laptop absolute top-0 left-0' style={{
+            <div className='lg:h-[100vh] md:h-[25vh] h-[25vh] md:pr-[10vw] flex items-center'>
+                <div className='lg:w-[300px] md:w-full w-full border-4 h-[90%] rounded-full relative p-2 overflow-hidden about_image_container'>
+                    <div className='lg:w-full md:w-auto w-auto h-full md:h-full
+                    lg:h-auto aspect-square rounded-full bg-slate-200 about_image_laptop absolute top-0 left-0' style={{
                         backgroundImage: 'url("' + profile + '")',
                         backgroundSize: 'cover'
                     }}></div>
