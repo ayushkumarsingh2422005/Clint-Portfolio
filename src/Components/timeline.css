@@ -12,8 +12,8 @@
     align-items: center;
     position: relative;
     /* padding-left: 0vw; */
-    margin: 0 auto;
-    margin-right: 105px;
+    /* margin: 0 auto; */
+    /* margin-right: 15px; */
 }
 
 .timeline::before {

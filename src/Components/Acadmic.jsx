@@ -73,11 +73,11 @@ export default function Academic() {
         <span>E</span>
       </div>
       <div
-        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} 2xl:overflow-x-auto lg:overflow-x-auto scrollable-element scrollbar-dark 2xl:mx-auto`}
+        className={`timeline-container w-screen ${!timeline ? "overflow-hidden" : "overflow-x-auto"} 2xl:overflow-x-auto lg:overflow-x-auto scrollable-element scrollbar-dark`}
         // onDoubleClick={handleDoubleClick}
         ref={timelineRef}
       >
-        <div className="timeline">
+        <div className="timeline 2xl:mx-0 lg:mx-auto md:mx-auto mx-5">
           {items.map((item, index) => (
             <TimelineComponent desc={item.description} date={item.date} color={item.color} idx={index} key={index} />
           ))}
